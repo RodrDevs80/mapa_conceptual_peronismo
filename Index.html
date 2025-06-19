@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,28 +13,28 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
-        
+
         .concept-node {
             transition: all 0.3s ease;
             cursor: pointer;
             position: relative;
         }
-        
+
         .concept-node:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
-        
+
         .concept-details {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
-        
+
         .concept-details.expanded {
             max-height: 1000px;
         }
-        
+
         .connection-line {
             position: absolute;
             background: linear-gradient(90deg, #4299e1, #667eea);
@@ -41,18 +42,18 @@
             transform-origin: left center;
             z-index: 0;
         }
-        
+
         .concept-map {
             position: relative;
             z-index: 1;
         }
-        
+
         .timeline-bar {
             background: linear-gradient(90deg, #4299e1, #667eea, #764ba2);
             height: 4px;
             border-radius: 2px;
         }
-        
+
         .period-marker {
             position: absolute;
             top: -10px;
@@ -65,6 +66,7 @@
         }
     </style>
 </head>
+
 <body class="p-4">
     <div class="max-w-7xl mx-auto">
         <!-- Header -->
@@ -119,7 +121,8 @@
         <div class="concept-map relative">
             <!-- Central Node -->
             <div class="flex justify-center mb-12">
-                <div class="concept-node bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-6 rounded-full shadow-xl text-center max-w-xs">
+                <div
+                    class="concept-node bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-6 rounded-full shadow-xl text-center max-w-xs">
                     <i class="fas fa-star text-3xl mb-2"></i>
                     <h3 class="text-xl font-bold">PERONISMO</h3>
                     <p class="text-sm mt-2">(1943-1955)</p>
@@ -136,7 +139,7 @@
                     </div>
                     <p class="text-gray-600 mb-2 font-semibold">1943-1946</p>
                     <p class="text-sm text-gray-700">Revolución militar, consolidación y victoria electoral</p>
-                    
+
                     <div id="period1" class="concept-details mt-4">
                         <div class="border-t pt-4 space-y-3">
                             <div class="bg-blue-50 p-3 rounded">
@@ -150,7 +153,7 @@
                                     <li>• Neutralismo en la Segunda Guerra Mundial</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-green-50 p-3 rounded">
                                 <h4 class="font-semibold text-green-800 mb-2">
                                     <i class="fas fa-briefcase mr-2"></i>Secretaría de Trabajo
@@ -162,7 +165,7 @@
                                     <li>• 17 de octubre de 1945: movilización clave</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-purple-50 p-3 rounded">
                                 <h4 class="font-semibold text-purple-800 mb-2">
                                     <i class="fas fa-vote-yea mr-2"></i>Elecciones de 1946
@@ -185,7 +188,7 @@
                     </div>
                     <p class="text-gray-600 mb-2 font-semibold">1946-1952</p>
                     <p class="text-sm text-gray-700">Consolidación del poder y políticas transformadoras</p>
-                    
+
                     <div id="period2" class="concept-details mt-4">
                         <div class="border-t pt-4 space-y-3">
                             <div class="bg-blue-50 p-3 rounded">
@@ -199,7 +202,7 @@
                                     <li>• Aumento del gasto público</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-pink-50 p-3 rounded">
                                 <h4 class="font-semibold text-pink-800 mb-2">
                                     <i class="fas fa-heart mr-2"></i>Eva Perón (Evita)
@@ -211,7 +214,7 @@
                                     <li>• Su muerte en 1952: punto de inflexión</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-orange-50 p-3 rounded">
                                 <h4 class="font-semibold text-orange-800 mb-2">
                                     <i class="fas fa-gavel mr-2"></i>Control Institucional
@@ -235,7 +238,7 @@
                     </div>
                     <p class="text-gray-600 mb-2 font-semibold">1952-1955</p>
                     <p class="text-sm text-gray-700">Conflictos internos y fin del régimen</p>
-                    
+
                     <div id="period3" class="concept-details mt-4">
                         <div class="border-t pt-4 space-y-3">
                             <div class="bg-yellow-50 p-3 rounded">
@@ -249,7 +252,7 @@
                                     <li>• Resistencia sindical a los cambios</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-red-50 p-3 rounded">
                                 <h4 class="font-semibold text-red-800 mb-2">
                                     <i class="fas fa-church mr-2"></i>Ruptura con la Iglesia
@@ -261,7 +264,7 @@
                                     <li>• Tensión con sectores católicos</li>
                                 </ul>
                             </div>
-                            
+
                             <div class="bg-gray-50 p-3 rounded">
                                 <h4 class="font-semibold text-gray-800 mb-2">
                                     <i class="fas fa-plane mr-2"></i>Revolución Libertadora
@@ -283,7 +286,7 @@
                 <h2 class="text-2xl font-bold text-white mb-6 text-center">
                     <i class="fas fa-lightbulb mr-2"></i>Conceptos Esenciales
                 </h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="concept-node bg-white rounded-lg p-4 shadow-lg" onclick="toggleDetails('concept1')">
                         <div class="flex items-center mb-2">
@@ -291,57 +294,63 @@
                             <h4 class="font-bold text-gray-800">Justicia Social</h4>
                         </div>
                         <div id="concept1" class="concept-details">
-                            <p class="text-sm text-gray-700 mt-2">Eje del discurso peronista, con políticas redistributivas, derechos laborales y ampliación del Estado benefactor.</p>
+                            <p class="text-sm text-gray-700 mt-2">Eje del discurso peronista, con políticas
+                                redistributivas, derechos laborales y ampliación del Estado benefactor.</p>
                         </div>
                     </div>
-                    
+
                     <div class="concept-node bg-white rounded-lg p-4 shadow-lg" onclick="toggleDetails('concept2')">
                         <div class="flex items-center mb-2">
                             <i class="fas fa-globe-americas text-green-600 mr-2"></i>
                             <h4 class="font-bold text-gray-800">Tercera Posición</h4>
                         </div>
                         <div id="concept2" class="concept-details">
-                            <p class="text-sm text-gray-700 mt-2">Política exterior independiente tanto de Estados Unidos como de la URSS durante la Guerra Fría.</p>
+                            <p class="text-sm text-gray-700 mt-2">Política exterior independiente tanto de Estados
+                                Unidos como de la URSS durante la Guerra Fría.</p>
                         </div>
                     </div>
-                    
+
                     <div class="concept-node bg-white rounded-lg p-4 shadow-lg" onclick="toggleDetails('concept3')">
                         <div class="flex items-center mb-2">
                             <i class="fas fa-users text-purple-600 mr-2"></i>
                             <h4 class="font-bold text-gray-800">Comunidad Organizada</h4>
                         </div>
                         <div id="concept3" class="concept-details">
-                            <p class="text-sm text-gray-700 mt-2">Ideal corporativista de armonía entre clases sociales bajo la conducción del Estado peronista.</p>
+                            <p class="text-sm text-gray-700 mt-2">Ideal corporativista de armonía entre clases sociales
+                                bajo la conducción del Estado peronista.</p>
                         </div>
                     </div>
-                    
+
                     <div class="concept-node bg-white rounded-lg p-4 shadow-lg" onclick="toggleDetails('concept4')">
                         <div class="flex items-center mb-2">
                             <i class="fas fa-times-circle text-red-600 mr-2"></i>
                             <h4 class="font-bold text-gray-800">Antiperonismo</h4>
                         </div>
                         <div id="concept4" class="concept-details">
-                            <p class="text-sm text-gray-700 mt-2">Rechazo de sectores medios, empresarios y militares al autoritarismo y populismo del régimen peronista.</p>
+                            <p class="text-sm text-gray-700 mt-2">Rechazo de sectores medios, empresarios y militares al
+                                autoritarismo y populismo del régimen peronista.</p>
                         </div>
                     </div>
-                    
+
                     <div class="concept-node bg-white rounded-lg p-4 shadow-lg" onclick="toggleDetails('concept5')">
                         <div class="flex items-center mb-2">
                             <i class="fas fa-landmark text-yellow-600 mr-2"></i>
                             <h4 class="font-bold text-gray-800">Legado Peronista</h4>
                         </div>
                         <div id="concept5" class="concept-details">
-                            <p class="text-sm text-gray-700 mt-2">Transformación de la estructura social argentina, integración de trabajadores y profunda división política que perduró.</p>
+                            <p class="text-sm text-gray-700 mt-2">Transformación de la estructura social argentina,
+                                integración de trabajadores y profunda división política que perduró.</p>
                         </div>
                     </div>
-                    
+
                     <div class="concept-node bg-white rounded-lg p-4 shadow-lg" onclick="toggleDetails('concept6')">
                         <div class="flex items-center mb-2">
                             <i class="fas fa-book text-indigo-600 mr-2"></i>
                             <h4 class="font-bold text-gray-800">Doctrina Peronista</h4>
                         </div>
                         <div id="concept6" class="concept-details">
-                            <p class="text-sm text-gray-700 mt-2">Tres pilares fundamentales: Justicia Social, Independencia Económica y Soberanía Política.</p>
+                            <p class="text-sm text-gray-700 mt-2">Tres pilares fundamentales: Justicia Social,
+                                Independencia Económica y Soberanía Política.</p>
                         </div>
                     </div>
                 </div>
@@ -381,7 +390,7 @@
                 <div class="mt-6 text-center bg-white bg-opacity-20 rounded-lg p-4">
                     <p class="text-lg font-medium">
                         <i class="fas fa-quote-left mr-2"></i>
-                        El peronismo fue un fenómeno complejo que combinó avances sociales significativos 
+                        El peronismo fue un fenómeno complejo que combinó avances sociales significativos
                         con tendencias autoritarias, cuya influencia transformó permanentemente la sociedad argentina.
                         <i class="fas fa-quote-right ml-2"></i>
                     </p>
@@ -401,13 +410,13 @@
         }
 
         // Auto-expand some key concepts on load for better visualization
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Add subtle animations and interactions
             const nodes = document.querySelectorAll('.concept-node');
             nodes.forEach((node, index) => {
                 node.style.animationDelay = `${index * 0.1}s`;
                 node.classList.add('animate-pulse');
-                
+
                 setTimeout(() => {
                     node.classList.remove('animate-pulse');
                 }, 2000);
@@ -420,16 +429,16 @@
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
             const oscillator = audioContext.createOscillator();
             const gainNode = audioContext.createGain();
-            
+
             oscillator.connect(gainNode);
             gainNode.connect(audioContext.destination);
-            
+
             oscillator.frequency.value = 800;
             oscillator.type = 'sine';
-            
+
             gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
             gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
-            
+
             oscillator.start(audioContext.currentTime);
             oscillator.stop(audioContext.currentTime + 0.1);
         }
@@ -440,4 +449,5 @@
         });
     </script>
 </body>
+
 </html>
